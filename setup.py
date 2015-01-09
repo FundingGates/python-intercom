@@ -12,7 +12,7 @@ from setuptools import setup
 
 with open(os.path.join('intercom', '__init__.py')) as init:
     source = init.read()
-    m = re.search("__version__ = '(\d+\.\d+\.\d+)'", source, re.M)
+    m = re.search("__version__ = '(.+)'", source, re.M)
     __version__ = m.groups()[0]
 
 setup(
